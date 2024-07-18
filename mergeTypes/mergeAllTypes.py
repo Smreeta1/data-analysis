@@ -1,6 +1,5 @@
 import pandas as pd
 
-# Example data
 df1 = pd.DataFrame({
     'District': ['Kathmandu', 'Kavre palanchowk', 'Dhanusa'],
     'KPI_1': [0.8, 0.75, 0.85]
