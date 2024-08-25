@@ -121,36 +121,68 @@ def process_text_data(filepath, test_size=0.4, random_state=123):
     
     positiveValues, negativeValues, neutralValues = count_ngrams(df_train)
     df_positive, df_negative, df_neutral = create_sentiment_dfs(positiveValues, negativeValues, neutralValues)
-    plot_top_words(df_positive, df_negative, df_neutral)
+    # plot_top_words(df_positive, df_negative, df_neutral)
     return df_train, df_test
 
-if __name__ == "__main__":
-#Generating results from a dataset:Eg. for:'all-data.csv'
- train_data, test_data = process_text_data('all-data.csv', test_size=0.4, random_state=123)
+# if __name__ == "__main__":
+# #Generating results from a dataset:Eg. for:'all-data.csv'
+#  train_data, test_data = process_text_data('all-data.csv', test_size=0.4, random_state=123)
 
  
-#Unigrams:
+# #Unigrams:
 
-train_data['unigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 1))
-test_data['unigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 1))
+# train_data['unigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 1))
+# test_data['unigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 1))
 
-# train dataset with unigrams
-print("Train unigrams dataframe:")
-print(train_data.head())
+# # train dataset with unigrams
+# print("Train unigrams dataframe:")
+# print(train_data.head())
 
-# test dataset with bigrams
-print("Test unigrams dataframe:")
-print(test_data.head())
+# # test dataset with bigrams
+# print("Test unigrams dataframe:")
+# print(test_data.head())
 
-#Bigrams:
-train_data['bigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 2))
-test_data['bigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 2))
+# #Bigrams:
+# train_data['bigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 2))
+# test_data['bigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 2))
 
-#train dataset bigrams
-print("Train bigrams dataframe:")
-print(train_data.head())
+# #train dataset bigrams
+# print("Train bigrams dataframe:")
+# print(train_data.head())
 
-# test dataset bigrams
-print("Test bigrams dataframe:")
-print(test_data.head())
+# # test dataset bigrams
+# print("Test bigrams dataframe:")
+# print(test_data.head())
 
+def generate_unigrams_bigrams(train_data, test_data):
+    """Generate unigrams and bigrams for train and test data."""
+    train_data['unigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 1))
+    test_data['unigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 1))
+
+    train_data['bigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 2))
+    test_data['bigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 2))
+
+    return train_data, test_data
+
+def main(filepath, test_size=0.4, random_state=123):
+    """Main function to process the text data and generate ngrams."""
+    train_data, test_data = process_text_data(filepath, test_size, random_state)
+    
+    train_data, test_data = generate_unigrams_bigrams(train_data, test_data)
+    
+    return train_data, test_data
+
+if __name__ == "__main__":
+    train_data, test_data = main('all-data.csv')
+    
+    print("Train unigrams dataframe:")
+    print(train_data[['news', 'unigrams']].head())
+
+    print("Test unigrams dataframe:")
+    print(test_data[['news', 'unigrams']].head())
+
+    print("Train bigrams dataframe:")
+    print(train_data[['news', 'bigrams']].head())
+
+    print("Test bigrams dataframe:")
+    print(test_data[['news', 'bigrams']].head())
