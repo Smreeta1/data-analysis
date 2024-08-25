@@ -74,6 +74,43 @@ def create_sentiment_dfs(positiveValues, negativeValues, neutralValues):
     df_neutral = pd.DataFrame(sorted(neutralValues.items(), key=lambda x: x[1], reverse=True), columns=['Word', 'Count'])
     return df_positive, df_negative, df_neutral
 
+def plot_top_words(df_positive, df_negative, df_neutral):
+    """Plot the top words for each sentiment."""
+    # Extract top 10 words
+    top_words_pos = df_positive.head(10)
+    top_words_neg = df_negative.head(10)
+    top_words_neu = df_neutral.head(10)
+    
+    # Plot for positive sentiment
+    plt.figure(figsize=(16, 4))
+    plt.bar(top_words_pos['Word'], top_words_pos['Count'], color='green', width=0.4)
+    plt.xlabel("Words in positive dataframe")
+    plt.ylabel("Count")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.title("Top 10 Positive Words")
+    plt.show()
+
+    # Plot for negative sentiment
+    plt.figure(figsize=(16, 4))
+    plt.bar(top_words_neg['Word'], top_words_neg['Count'], color='red', width=0.4)
+    plt.xlabel("Words in negative dataframe")
+    plt.ylabel("Count")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.title("Top 10 Negative Words")
+    plt.show()
+
+    # Plot for neutral sentiment
+    plt.figure(figsize=(16, 4))
+    plt.bar(top_words_neu['Word'], top_words_neu['Count'], color='blue', width=0.4)
+    plt.xlabel("Words in neutral dataframe")
+    plt.ylabel("Count")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.title("Top 10 Neutral Words")
+    plt.show()
+
 
 def process_text_data(filepath, test_size=0.4, random_state=123):
     """Main function to process the text data."""
@@ -84,7 +121,7 @@ def process_text_data(filepath, test_size=0.4, random_state=123):
     
     positiveValues, negativeValues, neutralValues = count_ngrams(df_train)
     df_positive, df_negative, df_neutral = create_sentiment_dfs(positiveValues, negativeValues, neutralValues)
-    
+    plot_top_words(df_positive, df_negative, df_neutral)
     return df_train, df_test
 
 if __name__ == "__main__":
@@ -93,25 +130,27 @@ if __name__ == "__main__":
  
 #Unigrams:
 
-train_data['unigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 1))
-test_data['unigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 1))
+# train_data['unigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 1))
+# test_data['unigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 1))
 
-# train dataset with unigrams
-print("Train unigrams dataframe:")
-print(train_data.head())
+# # train dataset with unigrams
+# print("Train unigrams dataframe:")
+# print(train_data.head())
 
-# test dataset with bigrams
-print("Test unigrams dataframe:")
-print(test_data.head())
+# # test dataset with bigrams
+# print("Test unigrams dataframe:")
+# print(test_data.head())
 
-#Bigrams:
-train_data['bigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 2))
-test_data['bigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 2))
+# #Bigrams:
+# train_data['bigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 2))
+# test_data['bigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 2))
 
-#train dataset bigrams
-print("Train bigrams dataframe:")
-print(train_data.head())
+# #train dataset bigrams
+# print("Train bigrams dataframe:")
+# print(train_data.head())
 
-# test dataset bigrams
-print("Test bigrams dataframe:")
-print(test_data.head())
+# # test dataset bigrams
+# print("Test bigrams dataframe:")
+# print(test_data.head())
+
+
