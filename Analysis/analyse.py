@@ -127,30 +127,30 @@ def process_text_data(filepath, test_size=0.4, random_state=123):
 if __name__ == "__main__":
 #Generating results from a dataset:Eg. for:'all-data.csv'
  train_data, test_data = process_text_data('all-data.csv', test_size=0.4, random_state=123)
+
  
 #Unigrams:
 
-# train_data['unigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 1))
-# test_data['unigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 1))
+train_data['unigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 1))
+test_data['unigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 1))
 
-# # train dataset with unigrams
-# print("Train unigrams dataframe:")
-# print(train_data.head())
+# train dataset with unigrams
+print("Train unigrams dataframe:")
+print(train_data.head())
 
-# # test dataset with bigrams
-# print("Test unigrams dataframe:")
-# print(test_data.head())
+# test dataset with bigrams
+print("Test unigrams dataframe:")
+print(test_data.head())
 
-# #Bigrams:
-# train_data['bigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 2))
-# test_data['bigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 2))
+#Bigrams:
+train_data['bigrams'] = train_data['news'].apply(lambda x: generate_ngrams(x, 2))
+test_data['bigrams'] = test_data['news'].apply(lambda x: generate_ngrams(x, 2))
 
-# #train dataset bigrams
-# print("Train bigrams dataframe:")
-# print(train_data.head())
+#train dataset bigrams
+print("Train bigrams dataframe:")
+print(train_data.head())
 
-# # test dataset bigrams
-# print("Test bigrams dataframe:")
-# print(test_data.head())
-
+# test dataset bigrams
+print("Test bigrams dataframe:")
+print(test_data.head())
 
