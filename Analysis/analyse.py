@@ -121,7 +121,7 @@ def process_text_data(filepath, test_size=0.4, random_state=123):
     
     positiveValues, negativeValues, neutralValues = count_ngrams(df_train)
     df_positive, df_negative, df_neutral = create_sentiment_dfs(positiveValues, negativeValues, neutralValues)
-    # plot_top_words(df_positive, df_negative, df_neutral)
+    plot_top_words(df_positive, df_negative, df_neutral) #plot fxn call
     return df_train, df_test
 
 # if __name__ == "__main__":
