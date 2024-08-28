@@ -9,10 +9,10 @@
 
 1. **Install Dependencies**:
    - **Python 3**
-2. **spaCy** with the English model (`en_core_web_sm`)
+   - **spaCy** with the English model (`en_core_web_sm`)
 
    ```bash
    pip3 install spacy
    python3 -m spacy download en_core_web_sm
-1. **Run Script**:
+2. **Run Script**:
 `python3 JobDesc.py`
