@@ -1,0 +1,530 @@
+Bigram,Frequency,Trigram,Frequency
+"('note', 'added')",827,"('travel', 'tourism', 'site')",42.0
+"('north', 'carolina')",95,"('commission', 'note', 'added')",36.0
+"('travel', 'tourism')",53,"('authority', 'note', 'added')",30.0
+"('tourism', 'site')",42,"('lottery', 'note', 'added')",30.0
+"('commission', 'note')",36,"('services', 'note', 'added')",21.0
+"('authority', 'note')",30,"('board', 'note', 'added')",20.0
+"('lottery', 'note')",30,"('extension', 'note', 'added')",19.0
+"('state', 'board')",24,"('national', 'guard', 'note')",16.0
+"('services', 'note')",21,"('guard', 'note', 'added')",16.0
+"('national', 'guard')",20,"('examiners', 'note', 'added')",16.0
+"('board', 'note')",20,"('north', 'carolina', 'department')",15.0
+"('extension', 'note')",19,"('service', 'note', 'added')",14.0
+"('carolina', 'department')",17,"('resources', 'note', 'added')",13.0
+"('guard', 'note')",16,"('education', 'note', 'added')",12.0
+"('examiners', 'note')",16,"('council', 'note', 'added')",12.0
+"('new', 'york')",15,"('new', 'york', 'state')",11.0
+"('south', 'carolina')",15,"('office', 'note', 'added')",11.0
+"('west', 'virginia')",15,"('website', 'note', 'added')",11.0
+"('virginia', 'department')",14,"('carolina', 'note', 'added')",10.0
+"('economic', 'development')",14,"('agency', 'note', 'added')",10.0
+"('service', 'note')",14,"('travel', 'tourism', 'sites')",10.0
+"('public', 'health')",13,"('system', 'note', 'added')",9.0
+"('resources', 'note')",13,"('department', 'education', 'note')",9.0
+"('washington', 'state')",13,"('north', 'carolina', 'note')",9.0
+"('board', 'examiners')",13,"('development', 'authority', 'note')",9.0
+"('education', 'note')",12,"('program', 'note', 'added')",8.0
+"('nc', 'department')",12,"('fund', 'note', 'added')",8.0
+"('council', 'note')",12,"('north', 'carolina', 'board')",8.0
+"('york', 'state')",11,"('virginia', 'note', 'added')",8.0
+"('office', 'note')",11,"('historical', 'society', 'note')",8.0
+"('department', 'education')",11,"('society', 'note', 'added')",8.0
+"('website', 'note')",11,"('louisiana', 'state', 'board')",8.0
+"('department', 'transportation')",10,"('health', 'human', 'services')",8.0
+"('cooperative', 'extension')",10,"('health', 'note', 'added')",7.0
+"('new', 'mexico')",10,"('corporation', 'note', 'added')",7.0
+"('department', 'public')",10,"('human', 'services', 'note')",7.0
+"('human', 'services')",10,"('site', 'note', 'added')",7.0
+"('carolina', 'note')",10,"('development', 'note', 'added')",7.0
+"('historical', 'society')",10,"('state', 'university', 'extension')",7.0
+"('development', 'authority')",10,"('extension', 'service', 'note')",7.0
+"('virgin', 'islands')",10,"('center', 'note', 'added')",7.0
+"('agency', 'note')",10,"('state', 'note', 'added')",6.0
+"('nc', 'board')",10,"('public', 'health', 'note')",6.0
+"('state', 'agencies')",10,"('university', 'extension', 'note')",6.0
+"('tourism', 'sites')",10,"('north', 'carolina', 'division')",6.0
+"('system', 'note')",9,"('department', 'transportation', 'note')",6.0
+"('nc', 'division')",9,"('transportation', 'note', 'added')",6.0
+"('state', 'university')",9,"('islands', 'note', 'added')",6.0
+"('department', 'agriculture')",9,"('department', 'health', 'human')",6.0
+"('health', 'human')",9,"('north', 'carolina', 'office')",6.0
+"('program', 'note')",8,"('management', 'note', 'added')",5.0
+"('fund', 'note')",8,"('trust', 'fund', 'note')",5.0
+"('carolina', 'board')",8,"('therapy', 'note', 'added')",5.0
+"('university', 'extension')",8,"('agencies', 'note', 'added')",5.0
+"('virginia', 'note')",8,"('parks', 'note', 'added')",5.0
+"('higher', 'education')",8,"('department', 'cultural', 'resources')",5.0
+"('society', 'note')",8,"('library', 'note', 'added')",5.0
+"('louisiana', 'board')",8,"('cooperative', 'extension', 'service')",5.0
+"('louisiana', 'state')",8,"('general', 'note', 'added')",5.0
+"('pattern', 'include')",8,"('department', 'agriculture', 'consumer')",5.0
+"('health', 'note')",7,"('agriculture', 'consumer', 'services')",5.0
+"('corporation', 'note')",7,"('consumer', 'services', 'note')",5.0
+"('trust', 'fund')",7,"('louisiana', 'note', 'added')",5.0
+"('site', 'note')",7,"('economic', 'development', 'authority')",5.0
+"('development', 'note')",7,"('state', 'fair', 'note')",5.0
+"('extension', 'service')",7,"('fair', 'note', 'added')",5.0
+"('department', 'health')",7,"('division', 'public', 'health')",5.0
+"('center', 'note')",7,"('state', 'north', 'carolina')",5.0
+"('north', 'carolinas')",7,"('state', 'board', 'examiners')",5.0
+"('rhode', 'island')",7,"('commerce', 'note', 'added')",5.0
+"('state', 'note')",6,"('north', 'carolina', 'state')",5.0
+"('housing', 'finance')",6,"('nc', 'department', 'public')",5.0
+"('cultural', 'resources')",6,"('see', 'historical', 'snapshot')",4.0
+"('retirement', 'system')",6,"('department', 'public', 'health')",4.0
+"('state', 'library')",6,"('licensing', 'board', 'note')",4.0
+"('department', 'commerce')",6,"('tourism', 'note', 'added')",4.0
+"('florida', 'department')",6,"('state', 'parks', 'note')",4.0
+"('state', 'agency')",6,"('cultural', 'resources', 'note')",4.0
+"('carolina', 'division')",6,"('economic', 'development', 'note')",4.0
+"('state', 'north')",6,"('safety', 'note', 'added')",4.0
+"('transportation', 'note')",6,"('attorney', 'general', 'note')",4.0
+"('islands', 'note')",6,"('industry', 'note', 'added')",4.0
+"('mississippi', 'state')",6,"('georgia', 'state', 'defense')",4.0
+"('carolina', 'office')",6,"('state', 'defense', 'force')",4.0
+"('see', 'historical')",5,"('commonwealth', 'virginia', 'note')",4.0
+"('united', 'way')",5,"('association', 'note', 'added')",4.0
+"('emergency', 'management')",5,"('virgin', 'islands', 'note')",4.0
+"('management', 'note')",5,"('mississippi', 'note', 'added')",4.0
+"('alabama', 'state')",5,"('department', 'commerce', 'note')",4.0
+"('public', 'service')",5,"('north', 'carolina', 'forest')",4.0
+"('arkansas', 'state')",5,"('finance', 'agency', 'note')",4.0
+"('therapy', 'note')",5,"('independent', 'living', 'council')",4.0
+"('agencies', 'note')",5,"('us', 'virgin', 'islands')",4.0
+"('parks', 'note')",5,"('west', 'virginia', 'department')",4.0
+"('department', 'cultural')",5,"('vermont', 'note', 'added')",3.0
+"('independent', 'living')",5,"('board', 'pharmacy', 'note')",3.0
+"('nebraska', 'state')",5,"('pharmacy', 'note', 'added')",3.0
+"('library', 'note')",5,"('medical', 'board', 'note')",3.0
+"('office', 'state')",5,"('arkansas', 'state', 'board')",3.0
+"('attorney', 'general')",5,"('carolina', 'department', 'cultural')",3.0
+"('general', 'note')",5,"('n', 'note', 'added')",3.0
+"('agriculture', 'consumer')",5,"('division', 'state', 'operated')",3.0
+"('consumer', 'services')",5,"('state', 'operated', 'healthcare')",3.0
+"('louisiana', 'note')",5,"('operated', 'healthcare', 'facilities')",3.0
+"('state', 'fair')",5,"('healthcare', 'facilities', 'note')",3.0
+"('fair', 'note')",5,"('facilities', 'note', 'added')",3.0
+"('division', 'public')",5,"('nc', 'note', 'added')",3.0
+"('new', 'jersey')",5,"('carolina', 'department', 'public')",3.0
+"('commerce', 'note')",5,"('department', 'public', 'safety')",3.0
+"('nc', 'state')",5,"('public', 'safety', 'note')",3.0
+"('carolina', 'state')",5,"('secretary', 'state', 'note')",3.0
+"('carolina', 'forest')",5,"('revenue', 'note', 'added')",3.0
+"('south', 'dakota')",5,"('pennsylvania', 'note', 'added')",3.0
+"('historical', 'snapshot')",4,"('committee', 'note', 'added')",3.0
+"('social', 'services')",4,"('water', 'resources', 'note')",3.0
+"('american', 'samoa')",4,"('cooperative', 'extension', 'note')",3.0
+"('state', 'public')",4,"('carolina', 'department', 'agriculture')",3.0
+"('arkansas', 'department')",4,"('department', 'agriculture', 'note')",3.0
+"('licensing', 'board')",4,"('agriculture', 'note', 'added')",3.0
+"('tourism', 'note')",4,"('blind', 'note', 'added')",3.0
+"('health', 'insurance')",4,"('legislature', 'note', 'added')",3.0
+"('state', 'parks')",4,"('new', 'mexico', 'note')",3.0
+"('fish', 'wildlife')",4,"('mexico', 'note', 'added')",3.0
+"('public', 'safety')",4,"('army', 'national', 'guard')",3.0
+"('safety', 'note')",4,"('state', 'treasurer', 'note')",3.0
+"('secretary', 'state')",4,"('treasurer', 'note', 'added')",3.0
+"('nc', 'dept')",4,"('youth', 'suicide', 'prevention')",3.0
+"('water', 'resources')",4,"('branch', 'note', 'added')",3.0
+"('industry', 'note')",4,"('kansas', 'note', 'added')",3.0
+"('governors', 'office')",4,"('municipalities', 'note', 'added')",3.0
+"('georgia', 'state')",4,"('government', 'note', 'added')",3.0
+"('state', 'defense')",4,"('history', 'note', 'added')",3.0
+"('defense', 'force')",4,"('maryland', 'note', 'added')",3.0
+"('commonwealth', 'virginia')",4,"('employees', 'retirement', 'system')",3.0
+"('association', 'note')",4,"('insurance', 'note', 'added')",3.0
+"('department', 'wildlife')",4,"('contractors', 'note', 'added')",3.0
+"('mississippi', 'note')",4,"('emergency', 'management', 'agency')",3.0
+"('forest', 'service')",4,"('management', 'agency', 'note')",3.0
+"('finance', 'agency')",4,"('division', 'north', 'carolina')",3.0
+"('state', 'employees')",4,"('court', 'system', 'note')",3.0
+"('living', 'council')",4,"('nc', 'department', 'health')",3.0
+"('housing', 'development')",4,"('nc', 'board', 'examiners')",3.0
+"('us', 'virgin')",4,"('licensure', 'board', 'note')",3.0
+"('virginia', 'state')",4,"('carolina', 'state', 'board')",3.0
+"('vermont', 'note')",3,"('carolina', 'forest', 'service')",3.0
+"('state', 'department')",3,"('forest', 'service', 'note')",3.0
+"('finance', 'authority')",3,"('department', 'public', 'instruction')",3.0
+"('supreme', 'court')",3,"('housing', 'finance', 'agency')",3.0
+"('board', 'pharmacy')",3,"('nc', 'division', 'public')",3.0
+"('pharmacy', 'note')",3,"('tourism', 'site', 'vermont')",2.0
+"('division', 'arkansas')",3,"('site', 'vermont', 'note')",2.0
+"('workforce', 'development')",3,"('virginia', 'service', 'virginia')",2.0
+"('medical', 'board')",3,"('service', 'virginia', 'department')",2.0
+"('physical', 'therapy')",3,"('virginia', 'department', 'social')",2.0
+"('california', 'state')",3,"('department', 'social', 'services')",2.0
+"('assistive', 'technology')",3,"('social', 'services', 'provided')",2.0
+"('arizona', 'state')",3,"('services', 'provided', 'partnership')",2.0
+"('board', 'massage')",3,"('provided', 'partnership', 'council')",2.0
+"('nc', 'museum')",3,"('partnership', 'council', 'community')",2.0
+"('museum', 'natural')",3,"('council', 'community', 'services')",2.0
+"('n', 'note')",3,"('community', 'services', 'family')",2.0
+"('division', 'state')",3,"('services', 'family', 'resource')",2.0
+"('state', 'operated')",3,"('family', 'resource', 'referral')",2.0
+"('operated', 'healthcare')",3,"('resource', 'referral', 'center')",2.0
+"('healthcare', 'facilities')",3,"('referral', 'center', 'planning')",2.0
+"('facilities', 'note')",3,"('center', 'planning', 'council')",2.0
+"('environmental', 'health')",3,"('planning', 'council', 'united')",2.0
+"('health', 'tracking')",3,"('council', 'united', 'way')",2.0
+"('maryland', 'department')",3,"('united', 'way', 'central')",2.0
+"('nc', 'note')",3,"('way', 'central', 'virginia')",2.0
+"('unclaimed', 'property')",3,"('central', 'virginia', 'united')",2.0
+"('clean', 'water')",3,"('virginia', 'united', 'way')",2.0
+"('water', 'management')",3,"('united', 'way', 'greater')",2.0
+"('maine', 'state')",3,"('way', 'greater', 'richmond')",2.0
+"('revenue', 'note')",3,"('greater', 'richmond', 'petersburg')",2.0
+"('pennsylvania', 'note')",3,"('richmond', 'petersburg', 'note')",2.0
+"('committee', 'note')",3,"('petersburg', 'note', 'added')",2.0
+"('ok', 'state')",3,"('new', 'mexico', 'cooperative')",2.0
+"('florida', 'office')",3,"('mexico', 'cooperative', 'extension')",2.0
+"('financial', 'services')",3,"('extension', 'publications', 'note')",2.0
+"('wildlife', 'conservation')",3,"('publications', 'note', 'added')",2.0
+"('united', 'states')",3,"('exchange', 'note', 'added')",2.0
+"('agriculture', 'note')",3,"('finance', 'authority', 'note')",2.0
+"('blind', 'note')",3,"('homeland', 'security', 'emergency')",2.0
+"('legislature', 'note')",3,"('governor', 'note', 'added')",2.0
+"('department', 'revenue')",3,"('alaska', 'railroad', 'corporation')",2.0
+"('mexico', 'note')",3,"('railroad', 'corporation', 'note')",2.0
+"('michigan', 'state')",3,"('alabama', 'note', 'added')",2.0
+"('state', 'legislature')",3,"('national', 'guard', 'counterdrug')",2.0
+"('nc', 'health')",3,"('film', 'office', 'note')",2.0
+"('army', 'national')",3,"('institute', 'note', 'added')",2.0
+"('state', 'treasurer')",3,"('state', 'department', 'education')",2.0
+"('treasurer', 'note')",3,"('american', 'samoa', 'note')",2.0
+"('youth', 'suicide')",3,"('samoa', 'note', 'added')",2.0
+"('suicide', 'prevention')",3,"('state', 'public', 'school')",2.0
+"('department', 'labor')",3,"('division', 'arkansas', 'department')",2.0
+"('kansas', 'state')",3,"('administration', 'note', 'added')",2.0
+"('board', 'nursing')",3,"('arizona', 'note', 'added')",2.0
+"('branch', 'note')",3,"('optometry', 'note', 'added')",2.0
+"('kansas', 'note')",3,"('board', 'physical', 'therapy')",2.0
+"('social', 'work')",3,"('state', 'port', 'authority')",2.0
+"('municipalities', 'note')",3,"('california', 'note', 'added')",2.0
+"('government', 'note')",3,"('state', 'board', 'dental')",2.0
+"('history', 'note')",3,"('board', 'dental', 'examiners')",2.0
+"('state', 'lottery')",3,"('dental', 'examiners', 'note')",2.0
+"('maryland', 'note')",3,"('ny', 'note', 'added')",2.0
+"('employees', 'retirement')",3,"('nc', 'museum', 'natural')",2.0
+"('montana', 'state')",3,"('museum', 'natural', 'sciences')",2.0
+"('workers', 'compensation')",3,"('natural', 'sciences', 'note')",2.0
+"('insurance', 'note')",3,"('sciences', 'note', 'added')",2.0
+"('contractors', 'note')",3,"('retirement', 'system', 'note')",2.0
+"('maryland', 'state')",3,"('combined', 'federal', 'campaign')",2.0
+"('management', 'agency')",3,"('indiana', 'note', 'added')",2.0
+"('health', 'care')",3,"('sc', 'note', 'added')",2.0
+"('division', 'north')",3,"('public', 'utilities', 'commission')",2.0
+"('court', 'system')",3,"('utilities', 'commission', 'note')",2.0
+"('arts', 'council')",3,"('courts', 'note', 'added')",2.0
+"('services', 'division')",3,"('new', 'york', 'note')",2.0
+"('nc', 'office')",3,"('york', 'note', 'added')",2.0
+"('licensure', 'board')",3,"('state', 'library', 'note')",2.0
+"('marine', 'fisheries')",3,"('clean', 'water', 'management')",2.0
+"('public', 'instruction')",3,"('water', 'management', 'trust')",2.0
+"('program', 'nc')",3,"('management', 'trust', 'fund')",2.0
+"('natural', 'heritage')",3,"('digital', 'maine', 'repository')",2.0
+"('well', 'contractors')",3,"('ohio', 'note', 'added')",2.0
+"('north', 'dakota')",3,"('carolina', 'department', 'transportation')",2.0
+"('nevada', 'department')",3,"('washington', 'state', 'university')",2.0
+"('general', 'assembly')",3,"('office', 'tourism', 'note')",2.0
+"('river', 'basin')",3,"('trust', 'note', 'added')",2.0
+"('state', 'website')",3,"('tourism', 'site', 'state')",2.0
+"('site', 'vermont')",2,"('university', 'extension', 'service')",2.0
+"('virginia', 'service')",2,"('florida', 'commission', 'status')",2.0
+"('service', 'virginia')",2,"('commission', 'status', 'women')",2.0
+"('department', 'social')",2,"('office', 'attorney', 'general')",2.0
+"('services', 'provided')",2,"('pennsylvania', 'fish', 'boat')",2.0
+"('provided', 'partnership')",2,"('florida', 'department', 'education')",2.0
+"('partnership', 'council')",2,"('programs', 'note', 'added')",2.0
+"('council', 'community')",2,"('florida', 'fish', 'wildlife')",2.0
+"('community', 'services')",2,"('fish', 'wildlife', 'conservation')",2.0
+"('services', 'family')",2,"('wildlife', 'conservation', 'commission')",2.0
+"('family', 'resource')",2,"('conservation', 'commission', 'note')",2.0
+"('resource', 'referral')",2,"('environmental', 'public', 'health')",2.0
+"('referral', 'center')",2,"('public', 'health', 'tracking')",2.0
+"('center', 'planning')",2,"('centers', 'disease', 'control')",2.0
+"('planning', 'council')",2,"('disease', 'control', 'prevention')",2.0
+"('council', 'united')",2,"('force', 'note', 'added')",2.0
+"('way', 'central')",2,"('defense', 'force', 'public')",2.0
+"('central', 'virginia')",2,"('state', 'board', 'community')",2.0
+"('virginia', 'united')",2,"('northern', 'mariana', 'islands')",2.0
+"('way', 'greater')",2,"('websites', 'note', 'added')",2.0
+"('greater', 'richmond')",2,"('sites', 'note', 'added')",2.0
+"('richmond', 'petersburg')",2,"('school', 'blind', 'note')",2.0
+"('petersburg', 'note')",2,"('finance', 'commission', 'note')",2.0
+"('mexico', 'cooperative')",2,"('tourism', 'site', 'new')",2.0
+"('extension', 'publications')",2,"('carolina', 'division', 'public')",2.0
+"('publications', 'note')",2,"('prevention', 'task', 'force')",2.0
+"('exchange', 'note')",2,"('department', 'labor', 'workforce')",2.0
+"('alabama', 'department')",2,"('labor', 'workforce', 'development')",2.0
+"('homeland', 'security')",2,"('workforce', 'development', 'note')",2.0
+"('security', 'emergency')",2,"('higher', 'education', 'assistance')",2.0
+"('board', 'directors')",2,"('kansas', 'state', 'board')",2.0
+"('governor', 'note')",2,"('arts', 'note', 'added')",2.0
+"('alaska', 'railroad')",2,"('board', 'nursing', 'note')",2.0
+"('railroad', 'corporation')",2,"('nursing', 'note', 'added')",2.0
+"('alabama', 'note')",2,"('department', 'revenue', 'note')",2.0
+"('guard', 'counterdrug')",2,"('office', 'secretary', 'state')",2.0
+"('film', 'office')",2,"('convention', 'center', 'note')",2.0
+"('information', 'center')",2,"('administrators', 'note', 'added')",2.0
+"('institute', 'note')",2,"('louisiana', 'board', 'massage')",2.0
+"('state', 'alabama')",2,"('board', 'massage', 'therapy')",2.0
+"('samoa', 'note')",2,"('massage', 'therapy', 'note')",2.0
+"('persons', 'disabilities')",2,"('board', 'chiropractic', 'examiners')",2.0
+"('public', 'school')",2,"('chiropractic', 'examiners', 'note')",2.0
+"('administration', 'note')",2,"('louisiana', 'board', 'examiners')",2.0
+"('arizona', 'note')",2,"('court', 'note', 'added')",2.0
+"('optometry', 'note')",2,"('south', 'carolina', 'department')",2.0
+"('board', 'physical')",2,"('licensed', 'professional', 'counselors')",2.0
+"('state', 'port')",2,"('board', 'examiners', 'note')",2.0
+"('port', 'authority')",2,"('state', 'lottery', 'note')",2.0
+"('web', 'site')",2,"('foundation', 'note', 'added')",2.0
+"('california', 'note')",2,"('program', 'within', 'office')",2.0
+"('board', 'dental')",2,"('higher', 'education', 'note')",2.0
+"('dental', 'examiners')",2,"('alaska', 'mental', 'health')",2.0
+"('ny', 'note')",2,"('mental', 'health', 'trust')",2.0
+"('natural', 'sciences')",2,"('michigan', 'note', 'added')",2.0
+"('sciences', 'note')",2,"('humanities', 'council', 'note')",2.0
+"('national', 'endowment')",2,"('www', 'resolve', 'note')",2.0
+"('combined', 'federal')",2,"('resolve', 'note', 'added')",2.0
+"('federal', 'campaign')",2,"('missouri', 'note', 'added')",2.0
+"('indiana', 'note')",2,"('minnesota', 'association', 'watershed')",2.0
+"('chesapeake', 'bay')",2,"('association', 'watershed', 'districts')",2.0
+"('childrens', 'health')",2,"('montana', 'state', 'fund')",2.0
+"('sc', 'note')",2,"('workers', 'compensation', 'insurance')",2.0
+"('public', 'utilities')",2,"('campaign', 'note', 'added')",2.0
+"('utilities', 'commission')",2,"('mt', 'department', 'commerce')",2.0
+"('courts', 'note')",2,"('florida', 'note', 'added')",2.0
+"('connecticut', 'state')",2,"('disabilities', 'note', 'added')",2.0
+"('york', 'note')",2,"('carolina', 'education', 'lottery')",2.0
+"('management', 'trust')",2,"('education', 'lottery', 'note')",2.0
+"('digital', 'maine')",2,"('nc', 'court', 'system')",2.0
+"('maine', 'repository')",2,"('arts', 'council', 'note')",2.0
+"('maine', 'history')",2,"('human', 'services', 'division')",2.0
+"('ohio', 'note')",2,"('division', 'vocational', 'rehabilitation')",2.0
+"('board', 'state')",2,"('nc', 'office', 'state')",2.0
+"('state', 'pennsylvania')",2,"('office', 'state', 'auditor')",2.0
+"('office', 'tourism')",2,"('state', 'auditor', 'note')",2.0
+"('trust', 'note')",2,"('auditor', 'note', 'added')",2.0
+"('site', 'washington')",2,"('nc', 'board', 'nursing')",2.0
+"('site', 'state')",2,"('waste', 'management', 'note')",2.0
+"('iowa', 'state')",2,"('north', 'carolina', 'social')",2.0
+"('oregon', 'state')",2,"('carolina', 'social', 'work')",2.0
+"('florida', 'commission')",2,"('social', 'work', 'certification')",2.0
+"('commission', 'status')",2,"('work', 'certification', 'licensure')",2.0
+"('status', 'women')",2,"('certification', 'licensure', 'board')",2.0
+"('office', 'attorney')",2,"('section', 'nc', 'department')",2.0
+"('pennsylvania', 'fish')",2,"('justice', 'note', 'added')",2.0
+"('fish', 'boat')",2,"('division', 'marine', 'fisheries')",2.0
+"('judicial', 'branch')",2,"('carolina', 'forest', 'action')",2.0
+"('florida', 'governors')",2,"('forest', 'action', 'plan')",2.0
+"('programs', 'note')",2,"('public', 'instruction', 'note')",2.0
+"('florida', 'fish')",2,"('instruction', 'note', 'added')",2.0
+"('conservation', 'commission')",2,"('state', 'library', 'north')",2.0
+"('congressional', 'districts')",2,"('library', 'north', 'carolina')",2.0
+"('environmental', 'public')",2,"('libraries', 'note', 'added')",2.0
+"('centers', 'disease')",2,"('labor', 'note', 'added')",2.0
+"('disease', 'control')",2,"('assembly', 'note', 'added')",2.0
+"('control', 'prevention')",2,"('teachers', 'state', 'employees')",2.0
+"('permits', 'authorizations')",2,"('program', 'nc', 'department')",2.0
+"('national', 'government')",2,"('north', 'carolina', 'natural')",2.0
+"('consumer', 'protection')",2,"('carolina', 'natural', 'heritage')",2.0
+"('force', 'note')",2,"('nc', 'onemap', 'public')",2.0
+"('force', 'public')",2,"('onemap', 'public', 'service')",2.0
+"('email', 'domain')",2,"('public', 'service', 'providing')",2.0
+"('mississippi', 'department')",2,"('service', 'providing', 'comprehensive')",2.0
+"('board', 'community')",2,"('providing', 'comprehensive', 'discovery')",2.0
+"('civil', 'war')",2,"('comprehensive', 'discovery', 'access')",2.0
+"('got', 'nc')",2,"('discovery', 'access', 'north')",2.0
+"('nc', 'agriculture')",2,"('access', 'north', 'carolinas')",2.0
+"('northern', 'mariana')",2,"('north', 'carolinas', 'geospatial')",2.0
+"('mariana', 'islands')",2,"('carolinas', 'geospatial', 'data')",2.0
+"('websites', 'note')",2,"('geospatial', 'data', 'resources')",2.0
+"('government', 'agencies')",2,"('data', 'resources', 'note')",2.0
+"('sites', 'note')",2,"('carolina', 'office', 'archives')",2.0
+"('services', 'agencies')",2,"('office', 'archives', 'history')",2.0
+"('school', 'blind')",2,"('schools', 'note', 'added')",2.0
+"('state', 'louisiana')",2,"('division', 'water', 'resources')",2.0
+"('finance', 'commission')",2,"('well', 'contractors', 'certification')",2.0
+"('official', 'site')",2,"('nevada', 'department', 'wildlife')",2.0
+"('hawaii', 'state')",2,"('tourism', 'site', 'north')",2.0
+"('high', 'technology')",2,"('dakota', 'note', 'added')",2.0
+"('college', 'savings')",2,"('new', 'jersey', 'state')",2.0
+"('services', 'administration')",2,"('health', 'nc', 'division')",2.0
+"('site', 'new')",2,"('nevada', 'note', 'added')",2.0
+"('innovate', 'washington')",2,"('state', 'agencies', 'note')",2.0
+"('created', 'state')",2,"('arts', 'commission', 'note')",2.0
+"('guam', 'guam')",2,"('facilities', 'authority', 'note')",2.0
+"('prevention', 'task')",2,"('pat', 'harrison', 'waterway')",2.0
+"('task', 'force')",2,"('harrison', 'waterway', 'district')",2.0
+"('nj', 'department')",2,"('waterway', 'district', 'phwd')",2.0
+"('labor', 'workforce')",2,"('district', 'phwd', 'mississippi')",2.0
+"('state', 'police')",2,"('phwd', 'mississippi', 'state')",2.0
+"('education', 'assistance')",2,"('mississippi', 'state', 'agency')",2.0
+"('arts', 'note')",2,"('state', 'agency', 'provides')",2.0
+"('nursing', 'note')",2,"('agency', 'provides', 'camping')",2.0
+"('kansas', 'department')",2,"('provides', 'camping', 'cabins')",2.0
+"('office', 'secretary')",2,"('camping', 'cabins', 'recreational')",2.0
+"('convention', 'center')",2,"('cabins', 'recreational', 'facilities')",2.0
+"('administrators', 'note')",2,"('recreational', 'facilities', 'mississippi')",2.0
+"('massage', 'therapy')",2,"('potato', 'commission', 'note')",2.0
+"('board', 'chiropractic')",2,"('division', 'note', 'added')",2.0
+"('chiropractic', 'examiners')",2,"('governor', 'general', 'assembly')",2.0
+"('information', 'services')",2,"('south', 'carolina', 'independent')",2.0
+"('developmental', 'disabilities')",2,"('carolina', 'independent', 'living')",2.0
+"('court', 'note')",2,"('living', 'council', 'scilc')",2.0
+"('speech', 'language')",2,"('council', 'scilc', 'note')",2.0
+"('section', 'website')",2,"('scilc', 'note', 'added')",2.0
+"('local', 'government')",2,"('statewide', 'independent', 'living')",2.0
+"('community', 'development')",2,"('housing', 'development', 'authority')",2.0
+"('louisiana', 'seafood')",2,"('michigan', 'historical', 'center')",2.0
+"('licensed', 'professional')",2,"('va', 'note', 'added')",2.0
+"('professional', 'counselors')",2,"('susquehanna', 'river', 'basin')",2.0
+"('state', 'housing')",2,"('iowa', 'note', 'added')",2.0
+"('foundation', 'note')",2,"('state', 'website', 'note')",2.0
+"('program', 'within')",2,"('maine', 'note', 'added')",2.0
+"('within', 'office')",2,"('texas', 'note', 'added')",2.0
+"('office', 'commissioner')",2,"('tennessee', 'note', 'added')",2.0
+"('alaska', 'mental')",2,"('wisconsin', 'note', 'added')",2.0
+"('mental', 'health')",2,"('virginia', 'department', 'aging')",2.0
+"('health', 'trust')",2,"('department', 'aging', 'rehabilitative')",2.0
+"('michigan', 'note')",2,"('aging', 'rehabilitative', 'services')",2.0
+"('humanities', 'council')",2,"('rehabilitative', 'services', 'note')",2.0
+"('michigan', 'lottery')",2,"('virginia', 'lottery', 'note')",2.0
+"('www', 'resolve')",2,"('blind', 'vision', 'impaired')",2.0
+"('resolve', 'note')",2,"('vision', 'impaired', 'note')",2.0
+"('missouri', 'note')",2,"('impaired', 'note', 'added')",2.0
+"('minnesota', 'association')",2,"('registration', 'note', 'added')",2.0
+"('association', 'watershed')",2,"('virginia', 'housing', 'development')",2.0
+"('watershed', 'districts')",2,"('virginia', 'department', 'agriculture')",2.0
+"('official', 'website')",2,"('virginia', 'economic', 'development')",2.0
+"('official', 'state')",2,"('commission', 'volunteerism', 'community')",2.0
+"('state', 'fund')",2,"('volunteerism', 'community', 'service')",2.0
+"('compensation', 'insurance')",2,"('community', 'service', 'note')",2.0
+"('campaign', 'note')",2,"('virginia', 'department', 'commerce')",2.0
+"('industries', 'blind')",2,"('west', 'virginia', 'state')",2.0
+"('state', 'commission')",2,,
+"('mt', 'department')",2,,
+"('portal', 'state')",2,,
+"('florida', 'note')",2,,
+"('department', 'financial')",2,,
+"('disabilities', 'note')",2,,
+"('carolina', 'education')",2,,
+"('education', 'lottery')",2,,
+"('nc', 'court')",2,,
+"('carolina', 'arts')",2,,
+"('rehabilitation', 'services')",2,,
+"('division', 'vocational')",2,,
+"('vocational', 'rehabilitation')",2,,
+"('state', 'auditor')",2,,
+"('auditor', 'note')",2,,
+"('waste', 'management')",2,,
+"('nc', 'school')",2,,
+"('carolina', 'social')",2,,
+"('work', 'certification')",2,,
+"('certification', 'licensure')",2,,
+"('juvenile', 'justice')",2,,
+"('section', 'nc')",2,,
+"('justice', 'note')",2,,
+"('division', 'marine')",2,,
+"('management', 'division')",2,,
+"('forest', 'action')",2,,
+"('action', 'plan')",2,,
+"('instruction', 'note')",2,,
+"('library', 'north')",2,,
+"('libraries', 'note')",2,,
+"('labor', 'note')",2,,
+"('assembly', 'note')",2,,
+"('lifetime', 'income')",2,,
+"('teachers', 'state')",2,,
+"('nc', 'public')",2,,
+"('carolina', 'natural')",2,,
+"('nc', 'onemap')",2,,
+"('onemap', 'public')",2,,
+"('service', 'providing')",2,,
+"('providing', 'comprehensive')",2,,
+"('comprehensive', 'discovery')",2,,
+"('discovery', 'access')",2,,
+"('access', 'north')",2,,
+"('carolinas', 'geospatial')",2,,
+"('geospatial', 'data')",2,,
+"('data', 'resources')",2,,
+"('branch', 'nc')",2,,
+"('office', 'archives')",2,,
+"('archives', 'history')",2,,
+"('public', 'schools')",2,,
+"('schools', 'note')",2,,
+"('school', 'deaf')",2,,
+"('nc', 'sip')",2,,
+"('department', 'state')",2,,
+"('division', 'water')",2,,
+"('contractors', 'certification')",2,,
+"('continuing', 'education')",2,,
+"('nc', 'wiseowl')",2,,
+"('information', 'network')",2,,
+"('site', 'north')",2,,
+"('dakota', 'note')",2,,
+"('nh', 'state')",2,,
+"('jersey', 'state')",2,,
+"('health', 'nc')",2,,
+"('disability', 'services')",2,,
+"('nevada', 'note')",2,,
+"('state', 'council')",2,,
+"('state', 'local')",2,,
+"('oklahoma', 'department')",2,,
+"('arts', 'commission')",2,,
+"('parks', 'wildlife')",2,,
+"('pa', 'state')",2,,
+"('pa', 'higher')",2,,
+"('facilities', 'authority')",2,,
+"('pat', 'harrison')",2,,
+"('harrison', 'waterway')",2,,
+"('waterway', 'district')",2,,
+"('district', 'phwd')",2,,
+"('phwd', 'mississippi')",2,,
+"('agency', 'provides')",2,,
+"('provides', 'camping')",2,,
+"('camping', 'cabins')",2,,
+"('cabins', 'recreational')",2,,
+"('recreational', 'facilities')",2,,
+"('facilities', 'mississippi')",2,,
+"('potato', 'commission')",2,,
+"('virginia', 'commonwealth')",2,,
+"('florida', 'state')",2,,
+"('division', 'note')",2,,
+"('governor', 'general')",2,,
+"('carolina', 'independent')",2,,
+"('council', 'scilc')",2,,
+"('scilc', 'note')",2,,
+"('statewide', 'independent')",2,,
+"('michigan', 'historical')",2,,
+"('historical', 'center')",2,,
+"('archives', 'michigan')",2,,
+"('va', 'note')",2,,
+"('susquehanna', 'river')",2,,
+"('included', 'find')",2,,
+"('find', 'state')",2,,
+"('iowa', 'note')",2,,
+"('maine', 'note')",2,,
+"('state', 'government')",2,,
+"('pattern', 'included')",2,,
+"('state', 'bar')",2,,
+"('texas', 'note')",2,,
+"('tennessee', 'note')",2,,
+"('wisconsin', 'note')",2,,
+"('university', 'arkansas')",2,,
+"('throughout', 'commonwealth')",2,,
+"('department', 'aging')",2,,
+"('aging', 'rehabilitative')",2,,
+"('rehabilitative', 'services')",2,,
+"('virginia', 'lottery')",2,,
+"('blind', 'vision')",2,,
+"('vision', 'impaired')",2,,
+"('impaired', 'note')",2,,
+"('registration', 'note')",2,,
+"('virginia', 'housing')",2,,
+"('horse', 'industry')",2,,
+"('virginia', 'economic')",2,,
+"('commission', 'volunteerism')",2,,
+"('volunteerism', 'community')",2,,
+"('community', 'service')",2,,
