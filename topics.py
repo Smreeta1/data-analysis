@@ -31,7 +31,7 @@ def clean_text(text):
 
     # Remove state names
     for state in states:
-        text = re.sub(r'\b' + re.escape(state) + r"('s)?\b", '', text) #removes state names with apostrophe('s)
+        text = re.sub(r'\b' + re.escape(state) + r"s\b", '', text) #removes state names with 's
 
     # Regular expression to match URLs
     url_pattern = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
