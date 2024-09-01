@@ -31,7 +31,7 @@ def clean_text(text):
 
     # Remove state names
     for state in states:
-        text = re.sub(r'\b' + re.escape(state) + r"s\b", '', text) #removes state names with 's
+       text = re.sub(r'\b' + re.escape(state) + r"(?:'s)?\b", '', text)
 
     # Regular expression to match URLs
     url_pattern = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
@@ -58,10 +58,9 @@ def clean_text(text):
     return cleaned_text
 
 
-# Generate n-grams from a list of tokens
-def generate_ngrams(tokens, n):
-    return list(ngrams(tokens, n))
-
+# # Generate n-grams from a list of tokens
+# def generate_ngrams(tokens, n):
+#     return list(ngrams(tokens, n))
 # Extract and sort the most common n-grams from a list of texts
 def extract_top_ngrams(texts, n_values, min_freq=1):
     all_ngrams = []
@@ -73,13 +72,11 @@ def extract_top_ngrams(texts, n_values, min_freq=1):
     sorted_ngrams = sorted(ngram_counts.items(), key=lambda item: item[1], reverse=True)
     return {ngram: count for ngram, count in sorted_ngrams if count >= min_freq}
 
-# Extract common n-grams (bigrams and trigrams)
-common_ngrams = extract_top_ngrams(df['Note'], n_values=[2, 3])
-
 # Save the most common n-grams to a CSV file
-top_ngrams_df = pd.DataFrame(common_ngrams.items(), columns=['N-Gram', 'Frequency'])
-top_ngrams_df.to_csv('top_ngrams.csv', index=False)
-print("Most common n-grams have been saved to 'top_ngrams.csv'.")
+def save_ngrams_to_csv(ngrams_dict, filename='top_ngrams.csv'):
+    top_ngrams_df = pd.DataFrame(ngrams_dict.items(), columns=['N-Gram', 'Frequency'])
+    top_ngrams_df.to_csv(filename, index=False)
+    print(f"Most common n-grams have been saved to '{filename}'.")
 
 # Mapping of sectors based on top n-grams
 def map_sectors(ngrams_dict):
@@ -87,15 +84,20 @@ def map_sectors(ngrams_dict):
 
 # Assign a sector note
 def assign_sector(note, mapping):
-    cleaned_note = clean_text(note) 
-    tokens = cleaned_note.split()
-    ngrams_list = generate_ngrams(tokens, 2) + generate_ngrams(tokens, 3)
-    
-    for ngram in ngrams_list:
-        ngram_str = ' '.join(ngram)
-        if ngram_str in mapping:
-            return mapping[ngram_str]
+    tokens = clean_text(note).split()
+    for n in [2, 3]:
+        ngrams_list = ngrams(tokens, n)
+        for ngram in ngrams_list:
+            ngram_str = ' '.join(ngram)
+            if ngram_str in mapping:
+                return mapping[ngram_str]
     return 'Unassigned'
+
+# Extract common n-grams (bigrams and trigrams)
+common_ngrams = extract_top_ngrams(df['Note'], n_values=[2, 3])
+
+# Save the most common n-grams to a CSV file
+save_ngrams_to_csv(common_ngrams)
 
 # Create sector mapping
 sector_mapping = map_sectors(common_ngrams)
