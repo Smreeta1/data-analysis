@@ -21,51 +21,73 @@ stop_words = set(stopwords.words('english'))
 # Cache to store cleaned text
 cleaned_text_cache = {}
 
-# Clean the text by removing stopwords, punctuation, digits, state names, and phrase "Note added" with timestamp
 def clean_text(text):
     if text in cleaned_text_cache:
         return cleaned_text_cache[text]
 
     text = text.lower()  # Convert text to lowercase
     text = re.sub(r'[^\w\s]', '', text)  # Remove punctuation
-    text = re.sub(r'\b\w*\d\w*\b', '', text)  # Removes words containing digits like 4th,etc.
+    text = re.sub(r'\b\w*\d\w*\b', '', text)  # Remove words containing digits
 
     # Remove state names
     for state in states:
-        text = re.sub(r'\b' + re.escape(state) + r'\b', '', text)
+        text = re.sub(r'\b' + re.escape(state) + r"('s)?\b", '', text) #removes state names with apostrophe('s)
 
-    # Remove the phrase "Note added" and timestamp following it
-    text = re.sub(r'-- note added.*', '', text)
+    # Regular expression to match URLs
+    url_pattern = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
     
+    # Replace all URLs with 'agencies url'
+    text = re.sub(url_pattern, 'agencies url', text)
+
+    # Remove U.S. and similar patterns
+    text = re.sub(r'\bu\.s\.[^,]*,', '', text)
+
+    # Remove .gov patterns
+    text = re.sub(r'\b[a-z]+\.gov\b', '', text)
+
+    # Remove specific two-letter state abbreviations (like NC, NY, SC, LA)
+    text = re.sub(r'\b\w{2}\b', '', text)
+   
     # Remove extra spaces
-    text = text.strip()
-    
+    text = re.sub(r'\s+', ' ', text).strip()
+
+    # Remove stopwords
     cleaned_text = ' '.join(word for word in text.split() if word not in stop_words)
-    
+
     cleaned_text_cache[text] = cleaned_text
     return cleaned_text
+
 
 # Generate n-grams from a list of tokens
 def generate_ngrams(tokens, n):
     return list(ngrams(tokens, n))
 
 # Extract and sort the most common n-grams from a list of texts
-def extract_top_ngrams(texts, n, min_freq=1):
+def extract_top_ngrams(texts, n_values, min_freq=1):
     all_ngrams = []
     for text in texts:
         tokens = clean_text(text).split()
-        all_ngrams.extend(generate_ngrams(tokens, n))
+        for n in n_values:
+            all_ngrams.extend(ngrams(tokens, n))
     ngram_counts = Counter(all_ngrams)
     sorted_ngrams = sorted(ngram_counts.items(), key=lambda item: item[1], reverse=True)
     return {ngram: count for ngram, count in sorted_ngrams if count >= min_freq}
 
-# Mapping of sectors based on common n-grams
+# Extract common n-grams (bigrams and trigrams)
+common_ngrams = extract_top_ngrams(df['Note'], n_values=[2, 3])
+
+# Save the most common n-grams to a CSV file
+top_ngrams_df = pd.DataFrame(common_ngrams.items(), columns=['N-Gram', 'Frequency'])
+top_ngrams_df.to_csv('top_ngrams.csv', index=False)
+print("Most common n-grams have been saved to 'top_ngrams.csv'.")
+
+# Mapping of sectors based on top n-grams
 def map_sectors(ngrams_dict):
     return { ' '.join(ngram): ' '.join(ngram) for ngram in ngrams_dict }
 
-# Assign a sector to a given note
+# Assign a sector note
 def assign_sector(note, mapping):
-    cleaned_note = clean_text(note)  # Clean text once
+    cleaned_note = clean_text(note) 
     tokens = cleaned_note.split()
     ngrams_list = generate_ngrams(tokens, 2) + generate_ngrams(tokens, 3)
     
@@ -75,20 +97,8 @@ def assign_sector(note, mapping):
             return mapping[ngram_str]
     return 'Unassigned'
 
-# Extract common bigrams and trigrams
-common_bigrams = extract_top_ngrams(df['Note'], n=2)
-common_trigrams = extract_top_ngrams(df['Note'], n=3)
-
-# Combine bigrams and trigrams into a single dictionary
-combined_ngrams = {**common_bigrams, **common_trigrams}
-
-# Save the most common n-grams to a CSV file
-top_ngrams_df = pd.DataFrame(combined_ngrams.items(), columns=['N-Gram', 'Frequency'])
-top_ngrams_df.to_csv('top_ngrams.csv', index=False)
-print("Most common n-grams have been saved to 'top_ngrams.csv'.")
-
 # Create sector mapping
-sector_mapping = map_sectors(combined_ngrams)
+sector_mapping = map_sectors(common_ngrams)
 
 # Assign sector to each note
 df['Sector'] = df['Note'].apply(lambda x: assign_sector(x, sector_mapping))
