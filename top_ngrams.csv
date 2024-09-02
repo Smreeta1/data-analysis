@@ -2,157 +2,14 @@ N-Gram,Frequency
 "('travel', 'tourism')",53
 "('tourism', 'site')",42
 "('travel', 'tourism', 'site')",42
-"('state', 'board')",24
-"('national', 'guard')",20
-"('economic', 'development')",14
-"('public', 'health')",13
-"('university', 'extension')",13
-"('board', 'examiners')",13
-"('state', 'agencies')",12
-"('department', 'transportation')",10
-"('cooperative', 'extension')",10
-"('department', 'public')",10
-"('department', 'education')",10
-"('human', 'services')",10
-"('historical', 'society')",10
-"('development', 'authority')",10
-"('state', 'pattern')",10
-"('tourism', 'sites')",10
-"('travel', 'tourism', 'sites')",10
-"('state', 'university')",9
-"('department', 'agriculture')",9
-"('health', 'human')",9
-"('higher', 'education')",8
-"('health', 'human', 'services')",8
-"('pattern', 'include')",8
-"('trust', 'fund')",7
-"('office', 'state')",7
-"('state', 'university', 'extension')",7
-"('extension', 'service')",7
-"('department', 'health')",7
-"('include', 'state')",7
-"('state', 'pattern', 'include')",7
-"('pattern', 'include', 'state')",7
-"('include', 'state', 'agencies')",7
-"('housing', 'finance')",6
-"('division', 'department')",6
-"('cultural', 'resources')",6
-"('retirement', 'system')",6
-"('state', 'library')",6
-"('department', 'commerce')",6
-"('state', 'agency')",6
-"('department', 'health', 'human')",6
 "('see', 'historical')",5
-"('united', 'way')",5
-"('state', 'department')",5
-"('emergency', 'management')",5
-"('public', 'service')",5
-"('department', 'cultural')",5
-"('department', 'cultural', 'resources')",5
-"('independent', 'living')",5
-"('cooperative', 'extension', 'service')",5
-"('attorney', 'general')",5
-"('agriculture', 'consumer')",5
-"('consumer', 'services')",5
-"('department', 'agriculture', 'consumer')",5
-"('agriculture', 'consumer', 'services')",5
-"('economic', 'development', 'authority')",5
-"('state', 'fair')",5
-"('division', 'public')",5
-"('division', 'public', 'health')",5
-"('state', 'board', 'examiners')",5
-"('state', 'website')",5
 "('historical', 'snapshot')",4
+"('snapshot', 'http')",4
 "('see', 'historical', 'snapshot')",4
-"('social', 'services')",4
-"('department', 'public', 'health')",4
-"('state', 'public')",4
-"('licensing', 'board')",4
-"('health', 'insurance')",4
-"('state', 'parks')",4
-"('program', 'department')",4
-"('fish', 'wildlife')",4
-"('public', 'safety')",4
-"('secretary', 'state')",4
-"('water', 'resources')",4
-"('governors', 'office')",4
-"('state', 'defense')",4
-"('defense', 'force')",4
-"('state', 'defense', 'force')",4
-"('department', 'wildlife')",4
-"('forest', 'service')",4
-"('finance', 'agency')",4
-"('state', 'employees')",4
-"('living', 'council')",4
-"('independent', 'living', 'council')",4
-"('housing', 'development')",4
-"('finance', 'authority')",3
-"('supreme', 'court')",3
-"('board', 'pharmacy')",3
-"('state', 'department', 'education')",3
-"('workforce', 'development')",3
-"('medical', 'board')",3
-"('physical', 'therapy')",3
-"('assistive', 'technology')",3
-"('board', 'massage')",3
-"('museum', 'natural')",3
-"('division', 'state')",3
-"('state', 'operated')",3
-"('operated', 'healthcare')",3
-"('healthcare', 'facilities')",3
-"('division', 'state', 'operated')",3
-"('state', 'operated', 'healthcare')",3
-"('operated', 'healthcare', 'facilities')",3
-"('environmental', 'health')",3
-"('health', 'tracking')",3
-"('univ', 'extension')",3
-"('department', 'public', 'safety')",3
-"('unclaimed', 'property')",3
-"('clean', 'water')",3
-"('water', 'management')",3
-"('site', 'state')",3
-"('tourism', 'site', 'state')",3
-"('university', 'cooperative')",3
-"('university', 'cooperative', 'extension')",3
-"('financial', 'services')",3
-"('wildlife', 'conservation')",3
-"('united', 'states')",3
-"('gov', 'pattern')",3
-"('department', 'revenue')",3
-"('state', 'legislature')",3
-"('army', 'national')",3
-"('army', 'national', 'guard')",3
-"('state', 'treasurer')",3
-"('youth', 'suicide')",3
-"('suicide', 'prevention')",3
-"('youth', 'suicide', 'prevention')",3
-"('department', 'labor')",3
-"('board', 'nursing')",3
-"('social', 'work')",3
-"('league', 'municipalities')",3
-"('state', 'lottery')",3
-"('employees', 'retirement')",3
-"('employees', 'retirement', 'system')",3
-"('workers', 'compensation')",3
-"('management', 'agency')",3
-"('emergency', 'management', 'agency')",3
-"('health', 'care')",3
-"('court', 'system')",3
-"('arts', 'council')",3
-"('services', 'division')",3
-"('licensure', 'board')",3
-"('section', 'department')",3
-"('marine', 'fisheries')",3
-"('public', 'instruction')",3
-"('department', 'public', 'instruction')",3
-"('housing', 'finance', 'agency')",3
-"('natural', 'heritage')",3
-"('well', 'contractors')",3
-"('general', 'assembly')",3
-"('river', 'basin')",3
-"('find', 'state')",3
+"('historical', 'snapshot', 'http')",4
 "('service', 'department')",2
 "('department', 'social')",2
+"('social', 'services')",4
 "('services', 'provided')",2
 "('provided', 'partnership')",2
 "('partnership', 'council')",2
@@ -165,6 +22,7 @@ N-Gram,Frequency
 "('center', 'planning')",2
 "('planning', 'council')",2
 "('council', 'united')",2
+"('united', 'way')",5
 "('way', 'central')",2
 "('central', 'united')",2
 "('way', 'greater')",2
@@ -191,67 +49,142 @@ N-Gram,Frequency
 "('united', 'way', 'greater')",2
 "('way', 'greater', 'richmond')",2
 "('greater', 'richmond', 'petersburg')",2
+"('state', 'department')",5
+"('department', 'transportation')",10
+"('cooperative', 'extension')",10
 "('extension', 'publications')",2
+"('department', 'public')",10
+"('public', 'health')",13
+"('department', 'public', 'health')",4
+"('housing', 'finance')",6
+"('finance', 'authority')",3
 "('homeland', 'security')",2
 "('security', 'emergency')",2
+"('emergency', 'management')",5
 "('homeland', 'security', 'emergency')",2
 "('board', 'directors')",2
 "('railroad', 'corporation')",2
+"('national', 'guard')",20
 "('guard', 'counterdrug')",2
 "('national', 'guard', 'counterdrug')",2
 "('film', 'office')",2
 "('information', 'center')",2
+"('supreme', 'court')",3
+"('state', 'board')",24
 "('state', 'medical')",2
+"('board', 'pharmacy')",3
+"('department', 'education')",10
+"('state', 'department', 'education')",3
 "('persons', 'disabilities')",2
+"('public', 'service')",5
+"('state', 'public')",4
 "('public', 'school')",2
+"('division', 'department')",6
 "('state', 'public', 'school')",2
+"('licensing', 'board')",4
+"('workforce', 'development')",3
+"('trust', 'fund')",7
+"('economic', 'development')",14
+"('health', 'insurance')",4
+"('human', 'services')",10
+"('medical', 'board')",3
 "('board', 'physical')",2
+"('physical', 'therapy')",3
 "('board', 'physical', 'therapy')",2
 "('state', 'port')",2
 "('port', 'authority')",2
 "('state', 'port', 'authority')",2
 "('web', 'site')",2
+"('assistive', 'technology')",3
 "('board', 'dental')",2
 "('dental', 'examiners')",2
 "('state', 'board', 'dental')",2
 "('board', 'dental', 'examiners')",2
+"('state', 'parks')",4
+"('department', 'cultural')",5
+"('cultural', 'resources')",6
+"('department', 'cultural', 'resources')",5
+"('board', 'massage')",3
+"('museum', 'natural')",3
 "('natural', 'sciences')",2
 "('museum', 'natural', 'sciences')",2
 "('national', 'endowment')",2
 "('state', 'office')",2
+"('independent', 'living')",5
+"('retirement', 'system')",6
+"('division', 'state')",3
+"('state', 'operated')",3
+"('operated', 'healthcare')",3
+"('healthcare', 'facilities')",3
+"('division', 'state', 'operated')",3
+"('state', 'operated', 'healthcare')",3
+"('operated', 'healthcare', 'facilities')",3
+"('environmental', 'health')",3
+"('health', 'tracking')",3
+"('program', 'department')",4
 "('program', 'department', 'public')",2
+"('univ', 'extension')",3
 "('combined', 'federal')",2
 "('federal', 'campaign')",2
 "('combined', 'federal', 'campaign')",2
 "('chesapeake', 'bay')",2
-"('childrens', 'health')",2
+"('children', 'health')",2
 "('public', 'utilities')",2
 "('utilities', 'commission')",2
 "('public', 'utilities', 'commission')",2
+"('fish', 'wildlife')",4
 "('enterprises', 'department')",2
+"('public', 'safety')",4
+"('department', 'public', 'safety')",3
+"('state', 'treasury')",2
+"('unclaimed', 'property')",3
+"('state', 'university')",9
+"('state', 'library')",6
+"('clean', 'water')",3
+"('water', 'management')",3
 "('management', 'trust')",2
 "('clean', 'water', 'management')",2
 "('water', 'management', 'trust')",2
 "('management', 'trust', 'fund')",2
+"('secretary', 'state')",4
+"('department', 'commerce')",6
 "('digital', 'repository')",2
 "('services', 'state')",2
 "('website', 'department')",2
 "('website', 'department', 'transportation')",2
 "('board', 'state')",2
+"('office', 'state')",7
 "('office', 'tourism')",2
+"('water', 'resources')",4
+"('site', 'state')",3
+"('tourism', 'site', 'state')",3
+"('university', 'extension')",12
+"('state', 'university', 'extension')",7
+"('extension', 'service')",7
 "('university', 'extension', 'service')",2
+"('cooperative', 'extension', 'service')",5
+"('university', 'cooperative')",3
+"('university', 'cooperative', 'extension')",3
+"('lincoln', 'extension')",2
 "('commission', 'status')",2
 "('status', 'women')",2
 "('office', 'attorney')",2
+"('attorney', 'general')",6
 "('commission', 'status', 'women')",2
 "('office', 'attorney', 'general')",2
 "('fish', 'boat')",2
+"('boat', 'commission')",2
+"('fish', 'boat', 'commission')",2
 "('judicial', 'branch')",2
+"('governor', 'office')",4
+"('financial', 'services')",3
+"('wildlife', 'conservation')",3
 "('conservation', 'commission')",2
 "('fish', 'wildlife', 'conservation')",2
 "('wildlife', 'conservation', 'commission')",2
 "('congressional', 'districts')",2
 "('environmental', 'public')",2
+"('department', 'health')",7
 "('centers', 'disease')",2
 "('disease', 'control')",2
 "('control', 'prevention')",2
@@ -260,44 +193,75 @@ N-Gram,Frequency
 "('centers', 'disease', 'control')",2
 "('disease', 'control', 'prevention')",2
 "('permits', 'authorizations')",2
+"('department', 'agriculture')",9
+"('agriculture', 'consumer')",5
+"('consumer', 'services')",5
+"('department', 'agriculture', 'consumer')",5
+"('agriculture', 'consumer', 'services')",5
 "('national', 'government')",2
 "('consumer', 'protection')",2
+"('state', 'defense')",4
+"('defense', 'force')",4
+"('state', 'defense', 'force')",4
 "('force', 'public')",2
 "('email', 'domain')",2
 "('defense', 'force', 'public')",2
 "('board', 'community')",2
+"('united', 'states')",3
 "('state', 'board', 'community')",2
 "('civil', 'war')",2
 "('government', 'agencies')",2
 "('services', 'agencies')",2
 "('school', 'blind')",2
 "('finance', 'commission')",2
+"('department', 'revenue')",3
 "('official', 'site')",2
+"('historical', 'society')",10
 "('high', 'technology')",2
+"('state', 'agency')",6
+"('state', 'legislature')",3
+"('army', 'national')",3
+"('army', 'national', 'guard')",3
 "('college', 'savings')",2
 "('services', 'administration')",2
+"('state', 'treasurer')",4
 "('health', 'health')",2
 "('created', 'state')",2
+"('see', 'http')",2
+"('development', 'authority')",10
+"('economic', 'development', 'authority')",5
+"('state', 'fair')",5
+"('division', 'public')",5
+"('youth', 'suicide')",3
+"('suicide', 'prevention')",3
 "('prevention', 'task')",2
 "('task', 'force')",2
+"('division', 'public', 'health')",5
+"('youth', 'suicide', 'prevention')",3
 "('prevention', 'task', 'force')",2
+"('department', 'labor')",3
 "('labor', 'workforce')",2
 "('department', 'labor', 'workforce')",2
 "('labor', 'workforce', 'development')",2
 "('state', 'police')",2
+"('higher', 'education')",8
 "('education', 'assistance')",2
 "('higher', 'education', 'assistance')",2
+"('board', 'nursing')",3
 "('office', 'secretary')",2
 "('office', 'secretary', 'state')",2
 "('convention', 'center')",2
+"('board', 'examiners')",13
 "('massage', 'therapy')",2
 "('board', 'massage', 'therapy')",2
+"('social', 'work')",3
 "('board', 'chiropractic')",2
 "('chiropractic', 'examiners')",2
 "('board', 'chiropractic', 'examiners')",2
 "('information', 'services')",2
 "('developmental', 'disabilities')",2
 "('speech', 'language')",2
+"('league', 'municipalities')",3
 "('league', 'cities')",2
 "('section', 'website')",2
 "('local', 'government')",2
@@ -305,7 +269,12 @@ N-Gram,Frequency
 "('licensed', 'professional')",2
 "('professional', 'counselors')",2
 "('licensed', 'professional', 'counselors')",2
+"('state', 'board', 'examiners')",5
 "('state', 'housing')",2
+"('state', 'lottery')",3
+"('department', 'wildlife')",4
+"('employees', 'retirement')",3
+"('employees', 'retirement', 'system')",3
 "('program', 'within')",2
 "('within', 'office')",2
 "('office', 'commissioner')",2
@@ -314,23 +283,33 @@ N-Gram,Frequency
 "('health', 'trust')",2
 "('mental', 'health', 'trust')",2
 "('humanities', 'council')",2
-"('www', 'resolve')",2
 "('association', 'watershed')",2
 "('watershed', 'districts')",2
 "('association', 'watershed', 'districts')",2
 "('official', 'website')",2
 "('official', 'state')",2
+"('http', 'office')",2
 "('state', 'fund')",2
+"('workers', 'compensation')",3
 "('compensation', 'insurance')",2
 "('workers', 'compensation', 'insurance')",2
 "('industries', 'blind')",2
 "('state', 'commission')",2
+"('management', 'agency')",3
+"('emergency', 'management', 'agency')",3
 "('portal', 'state')",2
 "('department', 'financial')",2
+"('health', 'care')",3
 "('education', 'lottery')",2
+"('court', 'system')",3
+"('arts', 'council')",3
 "('rehabilitation', 'services')",2
+"('health', 'human')",9
+"('services', 'division')",3
 "('division', 'vocational')",2
 "('vocational', 'rehabilitation')",2
+"('department', 'health', 'human')",6
+"('health', 'human', 'services')",8
 "('human', 'services', 'division')",2
 "('division', 'vocational', 'rehabilitation')",2
 "('state', 'auditor')",2
@@ -338,20 +317,31 @@ N-Gram,Frequency
 "('waste', 'management')",2
 "('work', 'certification')",2
 "('certification', 'licensure')",2
+"('licensure', 'board')",3
 "('social', 'work', 'certification')",2
 "('work', 'certification', 'licensure')",2
 "('certification', 'licensure', 'board')",2
 "('juvenile', 'justice')",2
+"('section', 'department')",3
 "('section', 'department', 'public')",2
 "('division', 'marine')",2
+"('marine', 'fisheries')",3
 "('division', 'marine', 'fisheries')",2
+"('forest', 'service')",4
 "('management', 'division')",2
 "('forest', 'action')",2
 "('action', 'plan')",2
 "('forest', 'action', 'plan')",2
+"('public', 'instruction')",3
+"('department', 'public', 'instruction')",3
+"('finance', 'agency')",4
+"('housing', 'finance', 'agency')",3
 "('lifetime', 'income')",2
 "('teachers', 'state')",2
+"('state', 'employees')",4
 "('teachers', 'state', 'employees')",2
+"('natural', 'heritage')",3
+"('state', 'agencies')",12
 "('onemap', 'public')",2
 "('service', 'providing')",2
 "('providing', 'comprehensive')",2
@@ -376,6 +366,7 @@ N-Gram,Frequency
 "('department', 'state')",2
 "('division', 'water')",2
 "('division', 'water', 'resources')",2
+"('well', 'contractors')",3
 "('contractors', 'certification')",2
 "('continuing', 'education')",2
 "('well', 'contractors', 'certification')",2
@@ -409,24 +400,40 @@ N-Gram,Frequency
 "('camping', 'cabins', 'recreational')",2
 "('cabins', 'recreational', 'facilities')",2
 "('potato', 'commission')",2
+"('general', 'assembly')",3
 "('governor', 'general')",2
 "('governor', 'general', 'assembly')",2
+"('living', 'council')",4
 "('council', 'scilc')",2
+"('independent', 'living', 'council')",4
 "('living', 'council', 'scilc')",2
 "('statewide', 'independent')",2
 "('statewide', 'independent', 'living')",2
+"('housing', 'development')",4
 "('housing', 'development', 'authority')",2
 "('historical', 'center')",2
 "('susquehanna', 'river')",2
+"('river', 'basin')",3
 "('susquehanna', 'river', 'basin')",2
+"('state', 'pattern')",9
+"('pattern', 'include')",8
+"('include', 'state')",7
+"('state', 'pattern', 'include')",7
+"('pattern', 'include', 'state')",7
+"('include', 'state', 'agencies')",7
 "('pattern', 'state')",2
 "('included', 'find')",2
+"('find', 'state')",2
 "('state', 'websites')",2
-"('included', 'find', 'state')",2
+"('state', 'website')",5
+"('http', 'gov')",3
 "('state', 'government')",2
-"('nstate', 'pattern')",2
+"('n', 'state')",2
+"('n', 'state', 'pattern')",2
 "('pattern', 'included')",2
 "('state', 'bar')",2
+"('tourism', 'sites')",10
+"('travel', 'tourism', 'sites')",10
 "('throughout', 'commonwealth')",2
 "('department', 'aging')",2
 "('aging', 'rehabilitative')",2
@@ -437,6 +444,8 @@ N-Gram,Frequency
 "('vision', 'impaired')",2
 "('blind', 'vision', 'impaired')",2
 "('horse', 'industry')",2
+"('development', 'partnership')",2
+"('economic', 'development', 'partnership')",2
 "('commission', 'volunteerism')",2
 "('volunteerism', 'community')",2
 "('community', 'service')",2
