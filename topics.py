@@ -1,9 +1,12 @@
 import pandas as pd
 import re
-import nltk
-from nltk.corpus import stopwords
+import spacy
+from spacy.lang.en.stop_words import STOP_WORDS
 from nltk.util import ngrams
 from collections import Counter
+
+# Load spaCy model
+nlp = spacy.load('en_core_web_sm')
 
 # Load the CSV file into a DataFrame
 df = pd.read_csv('3_govt_urls_state_only.csv')
@@ -20,12 +23,13 @@ states_set = set(pd.read_csv('states.csv')['State'])
 # Create a regex pattern for state names
 state_pattern = re.compile(r'\b(?:' + '|'.join(map(re.escape, states_set)) + r')\b', re.IGNORECASE)
 
-# Download required NLTK resources
-nltk.download('stopwords')
-stop_words = set(stopwords.words('english'))
-
 # Cache for storing cleaned text
 cleaned_text_cache = {}
+
+def remove_verbs(text):
+    doc = nlp(text)
+    filtered_tokens = [token.text for token in doc if token.pos_ != 'VERB' and not token.is_stop]
+    return ' '.join(filtered_tokens)
 
 def clean_text(text, states_pattern):
     if not text:
@@ -43,8 +47,9 @@ def clean_text(text, states_pattern):
     text = re.sub(r'\bu\.s\.[^,]*,', '', text)
     text = re.sub(r'\b\w{2}\b', '', text)
     
-    tokens = nltk.word_tokenize(text)
-    tokens = [token for token in tokens if token.isalpha() and token not in stop_words]
+    # Remove verbs and stopwords
+    text = remove_verbs(text)
+    tokens = [token for token in text.split() if token.isalpha() and token not in STOP_WORDS]
     
     cleaned_text = ' '.join(tokens)
     cleaned_text_cache[text] = cleaned_text
