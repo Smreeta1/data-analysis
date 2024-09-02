@@ -9,10 +9,21 @@ from collections import Counter
 df = pd.read_csv('3_govt_urls_state_only.csv')
 
 # Extract state names from the 'Location' column
-states = df['Location'].dropna()
+states = df['Location'].dropna().str.strip().str.lower()
 
 # Clean state names by normalizing spaces and case
-states = [state.strip().lower() for state in states]
+states = sorted(set(states))
+
+# Save cleaned state names to a CSV file
+states_df = pd.DataFrame(states, columns=['State'])
+states_df.to_csv('states.csv', index=False)
+
+# Load cleaned state names from CSV file
+states_df = pd.read_csv('states.csv')
+states_set = set(states_df['State'])
+
+# Create a regex pattern for state names
+state_pattern = re.compile(r'\b(?:' + '|'.join(map(re.escape, states_set)) + r')\b', re.IGNORECASE)
 
 # Download stopwords from NLTK
 nltk.download('stopwords')
@@ -21,23 +32,25 @@ stop_words = set(stopwords.words('english'))
 # Cache to store cleaned text
 cleaned_text_cache = {}
 
-def clean_text(text):
+def clean_text(text, states_pattern):
     if text in cleaned_text_cache:
         return cleaned_text_cache[text]
+    
+    # Remove text after '--'
+    text = text.split('--', 1)[0].strip()
 
-    text = text.lower()  # Convert text to lowercase
-    text = re.sub(r'[^\w\s]', '', text)  # Remove punctuation
-    text = re.sub(r'\b\w*\d\w*\b', '', text)  # Remove words containing digits
+    # Convert text to lowercase
+    text = text.lower()
 
     # Remove state names
-    for state in states:
-       text = re.sub(r'\b' + re.escape(state) + r"(?:'s)?\b", '', text)
+    text = re.sub(states_pattern, '', text)
 
-    # Regular expression to match URLs
-    url_pattern = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
-    
-    # Replace all URLs with 'agencies url'
-    text = re.sub(url_pattern, 'agencies url', text)
+    # Remove words containing digits
+    text = re.sub(r'\b\w*\d\w*\b', '', text)
+
+    # Remove URLs
+    url_pattern = r'https://\S+'
+    text = re.sub(url_pattern, ' ', text)
 
     # Remove U.S. and similar patterns
     text = re.sub(r'\bu\.s\.[^,]*,', '', text)
@@ -48,24 +61,33 @@ def clean_text(text):
     # Remove specific two-letter state abbreviations (like NC, NY, SC, LA)
     text = re.sub(r'\b\w{2}\b', '', text)
    
+    # Remove punctuation
+    text = re.sub(r'[^\w\s]', '', text)
+    
     # Remove extra spaces
     text = re.sub(r'\s+', ' ', text).strip()
 
-    # Remove stopwords
-    cleaned_text = ' '.join(word for word in text.split() if word not in stop_words)
+    # Tokenize text
+    tokens = re.findall(r'\b\w+\b', text)
 
+    # Filter out stopwords
+    filtered_tokens = [token for token in tokens if token not in stop_words]
+    
+    # Join tokens back into a single string
+    cleaned_text = ' '.join(filtered_tokens)
+    
     cleaned_text_cache[text] = cleaned_text
     return cleaned_text
 
 
-# # Generate n-grams from a list of tokens
-# def generate_ngrams(tokens, n):
-#     return list(ngrams(tokens, n))
-# Extract and sort the most common n-grams from a list of texts
-def extract_top_ngrams(texts, n_values, min_freq=1):
+# Apply the function to clean the 'Note' column
+df['Note'] = df['Note'].apply(lambda x: clean_text(x, state_pattern))
+
+
+def extract_top_ngrams(texts, n_values, min_freq=2):
     all_ngrams = []
     for text in texts:
-        tokens = clean_text(text).split()
+        tokens = clean_text(text,state_pattern).split()
         for n in n_values:
             all_ngrams.extend(ngrams(tokens, n))
     ngram_counts = Counter(all_ngrams)
@@ -84,7 +106,7 @@ def map_sectors(ngrams_dict):
 
 # Assign a sector note
 def assign_sector(note, mapping):
-    tokens = clean_text(note).split()
+    tokens = clean_text(note,state_pattern).split()
     for n in [2, 3]:
         ngrams_list = ngrams(tokens, n)
         for ngram in ngrams_list:
